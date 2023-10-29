@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   align-items: center;
   justify-content: center;
+  max-width: 1520px;
 
   @media (max-width: 768px) {
     flex-direction: column; 
@@ -39,9 +40,8 @@ export const RightSection = styled.div`
 export const Form = styled.form`
   width: 80%;
   max-width: 450px;
-
   @media (max-width: 768px) {
-    width: 100%; 
+    width: 100%;
   }
 `;
 
@@ -79,17 +79,58 @@ export const EyeButton = styled.button`
 
 
 export const Button = styled.button`
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin: 0 auto; 
 `;
 
 export const CheckBoxContainer = styled.div`
 
 `;
 export const Span = styled.span`
- 
+margin-top: 10px;
   `
 export const CheckInput = styled.input`
-  
-  `
+  margin-bottom: 15px;
+`;
+export const H1 = styled.h1`
+font-size:3rem;
+text-align: center;
+
+`
+export const Div = styled.div`
+position:relative;
+`
+export const P = styled.p`
+  position: absolute;
+  right: 0;
+  bottom: -38px;
+  max-width: 450px;
+`;
+
+export const A = styled.a`
+  text-decoration: none;
+  color: blue;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  &:hover {
+text-decoration: underline;
+}
+`;
+
+export const ColorText = styled.span`
+  color: teal;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
